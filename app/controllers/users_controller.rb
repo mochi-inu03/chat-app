@@ -6,10 +6,10 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update(user_params)
-  end
   edirect_to root_path
 else
   render :edit, status: :unprocessable_entity
+end
 end
   private
 
